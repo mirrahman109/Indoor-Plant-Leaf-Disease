@@ -47,7 +47,7 @@ All steps are in the notebook, in this order.
 
 The classes are fairly balanced; the smallest is Bacterial Wilt (59 images).
 
-![Class distribution](assets/class_distribution.png)
+![Class distribution](images/dataset_distribution.png)
 
 ### 1.2 Stratified train / validation / test split
 - Split **80 / 10 / 10** with `train_test_split(..., stratify=label, random_state=42)`, done in two stages.
@@ -153,13 +153,13 @@ The model went from stuck at chance level (loss ≈ 2.197) to a working classifi
 ### Accuracy curve
 > Dashed line = start of fine-tuning.
 
-![Accuracy curve](assets/accuracy_curve.png)
+![Accuracy curve](Images/accuracy_curve.png)
 
 ### Loss curve
-![Loss curve](assets/loss_curve.png)
+![Loss curve](Images/loss_curve.png)
 
 ### Confusion matrix (test set)
-![Confusion matrix](assets/confusion_matrix.png)
+![Confusion matrix](Images/confusion_matrix.png)
 
 ### Per-class test results
 
@@ -181,7 +181,7 @@ The model went from stuck at chance level (loss ≈ 2.197) to a working classifi
 - All three **Money Plant** classes were classified perfectly.
 
 ### Sample predictions
-![Sample predictions](assets/sample_predictions.png)
+![Sample predictions](Images/Sample.png)
 
 ### Limitations
 - The validation and test sets have only **76 images each**, so one image is worth about 1.3 % accuracy. The 96 % validation vs 87 % test difference is partly noise and partly the model being chosen on the small validation set. Treat the test number as an estimate with a wide margin (roughly ±8 %).
