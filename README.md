@@ -47,7 +47,7 @@ All steps are in the notebook, in this order.
 
 The classes are fairly balanced; the smallest is Bacterial Wilt (59 images).
 
-![Class distribution](images/dataset_distribution.png)
+![Class distribution](Images/dataset_distribution.png)
 
 ### 1.2 Stratified train / validation / test split
 - Split **80 / 10 / 10** with `train_test_split(..., stratify=label, random_state=42)`, done in two stages.
@@ -194,7 +194,7 @@ The model went from stuck at chance level (loss ≈ 2.197) to a working classifi
 ```
 .
 ├── plant-disease-detection.ipynb   # full pipeline: data prep → training → evaluation
-├── assets/                         # figures used in this README
+├── images/                         # figures used in this README
 └── plant_disease_mobilenetv2.keras # saved model (created by the notebook)
 ```
 
