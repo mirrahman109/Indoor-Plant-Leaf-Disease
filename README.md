@@ -47,7 +47,7 @@ All steps are in the notebook, in this order.
 
 The classes are fairly balanced; the smallest is Bacterial Wilt (59 images).
 
-![Class distribution](images/Dataset Distribution.png)
+![Class distribution](images/dataset_distribution.png)
 
 ### 1.2 Stratified train / validation / test split
 - Split **80 / 10 / 10** with `train_test_split(..., stratify=label, random_state=42)`, done in two stages.
@@ -159,7 +159,7 @@ The model went from stuck at chance level (loss ≈ 2.197) to a working classifi
 ![Loss curve](Images/loss_curve.png)
 
 ### Confusion matrix (test set)
-![Confusion matrix](Images/Confusion Matrix.png)
+![Confusion matrix](Images/confusion_matrix.png)
 
 ### Per-class test results
 
